@@ -607,8 +607,8 @@ function showCategorySelection() {
 // Select category and start quiz
 function selectCategory(categoryKey) {
     currentCategory = categoryKey;
-    // Get 5 random questions for this category
-    selectedQuestions = getRandomQuestions(categoryKey, 5);
+    // Get 10 random questions for this category
+    selectedQuestions = getRandomQuestions(categoryKey, 10);
     showQuestion();
     document.getElementById('category-screen').classList.remove('active');
     document.getElementById('quiz-screen').classList.add('active');

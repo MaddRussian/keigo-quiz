@@ -10,7 +10,7 @@ A beautiful and interactive web-based quiz application for learning Japanese kei
   - **Customer Service Keigo**: Polite language for customer interactions
   - **Formal Ceremony Keigo**: Most formal keigo for ceremonies and official events
 - **Advanced Keigo Focus**: Questions focus on proper keigo (敬語) rather than basic polite forms
-- **Random Question Generation**: Each quiz is unique with randomly selected questions from a large question bank
+- **Random Question Generation**: Each quiz is unique with 10 randomly selected questions from a large question bank
 - **Large Question Bank**: Over 50+ questions across all categories for endless variety
 - **Interactive Quiz Interface**: Modern, responsive design with smooth animations
 - **Real-time Feedback**: Immediate visual feedback for correct/incorrect answers
@@ -72,7 +72,7 @@ keigo-quiz/
 
 ### Random Question System:
 - **Fisher-Yates shuffle algorithm** ensures truly random question selection
-- **5 questions per quiz** randomly selected from each category's question bank
+- **10 questions per quiz** randomly selected from each category's question bank
 - **No repeated questions** within the same quiz session
 - **Different experience every time** - perfect for repeated practice
 
