@@ -10,6 +10,8 @@ A beautiful and interactive web-based quiz application for learning Japanese kei
   - **Customer Service Keigo**: Polite language for customer interactions
   - **Formal Ceremony Keigo**: Most formal keigo for ceremonies and official events
 - **Advanced Keigo Focus**: Questions focus on proper keigo (敬語) rather than basic polite forms
+- **Random Question Generation**: Each quiz is unique with randomly selected questions from a large question bank
+- **Large Question Bank**: Over 50+ questions across all categories for endless variety
 - **Interactive Quiz Interface**: Modern, responsive design with smooth animations
 - **Real-time Feedback**: Immediate visual feedback for correct/incorrect answers
 - **Progress Tracking**: Visual progress bar showing quiz completion
@@ -68,6 +70,19 @@ keigo-quiz/
 - **Cultural context** and appropriate usage
 - **Advanced polite expressions** used in formal settings
 
+### Random Question System:
+- **Fisher-Yates shuffle algorithm** ensures truly random question selection
+- **5 questions per quiz** randomly selected from each category's question bank
+- **No repeated questions** within the same quiz session
+- **Different experience every time** - perfect for repeated practice
+
+### Question Bank Statistics:
+- **Interview Keigo**: 12 questions
+- **Office Keigo**: 12 questions
+- **Customer Service Keigo**: 12 questions
+- **Formal Ceremony Keigo**: 12 questions
+- **Total**: 48+ unique keigo questions
+
 ### User Experience:
 - Clean, intuitive interface with category selection
 - Smooth transitions between questions and screens
@@ -75,6 +90,7 @@ keigo-quiz/
 - Progress indication with animated progress bar
 - Final score with encouraging messages in English and Japanese
 - Easy navigation between categories and screens
+- Unique quiz experience every time
 
 ## 🛠️ Technologies Used
 
@@ -82,6 +98,7 @@ keigo-quiz/
 - **CSS3**: Modern styling with gradients and animations
 - **Vanilla JavaScript**: No frameworks required
 - **Responsive Design**: Mobile-first approach
+- **Random Algorithm**: Fisher-Yates shuffle for question randomization
 
 ## 📱 Browser Compatibility
 
