@@ -569,11 +569,27 @@ function shuffleArray(array) {
     return array;
 }
 
+// Function to shuffle answer options and update correct answer index
+function shuffleQuestionOptions(question) {
+    const shuffledOptions = shuffleArray([...question.options]);
+    const correctAnswer = question.options[question.correct];
+    const newCorrectIndex = shuffledOptions.indexOf(correctAnswer);
+
+    return {
+        ...question,
+        options: shuffledOptions,
+        correct: newCorrectIndex
+    };
+}
+
 // Function to get random questions for a category
-function getRandomQuestions(categoryKey, count = 5) {
+function getRandomQuestions(categoryKey, count = 10) {
     const category = questionBank[categoryKey];
     const shuffledQuestions = shuffleArray([...category.questions]);
-    return shuffledQuestions.slice(0, count);
+    const selectedQuestions = shuffledQuestions.slice(0, count);
+
+    // Shuffle the answer options for each question
+    return selectedQuestions.map(question => shuffleQuestionOptions(question));
 }
 
 // Initialize the quiz
@@ -607,7 +623,7 @@ function showCategorySelection() {
 // Select category and start quiz
 function selectCategory(categoryKey) {
     currentCategory = categoryKey;
-    // Get 10 random questions for this category
+    // Get 10 random questions for this category with shuffled options
     selectedQuestions = getRandomQuestions(categoryKey, 10);
     showQuestion();
     document.getElementById('category-screen').classList.remove('active');
