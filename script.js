@@ -554,6 +554,301 @@ const questionBank = {
     }
 };
 
+// Keigo converter database
+const keigoConverter = {
+    // Common verbs
+    "行く": {
+        teineigo: "行きます",
+        sonkeigo: "いらっしゃいます",
+        kenjougo: "参ります"
+    },
+    "来る": {
+        teineigo: "来ます",
+        sonkeigo: "いらっしゃいます",
+        kenjougo: "参ります"
+    },
+    "見る": {
+        teineigo: "見ます",
+        sonkeigo: "ご覧になります",
+        kenjougo: "拝見します"
+    },
+    "言う": {
+        teineigo: "言います",
+        sonkeigo: "おっしゃいます",
+        kenjougo: "申します"
+    },
+    "する": {
+        teineigo: "します",
+        sonkeigo: "なさいます",
+        kenjougo: "いたします"
+    },
+    "食べる": {
+        teineigo: "食べます",
+        sonkeigo: "召し上がります",
+        kenjougo: "いただきます"
+    },
+    "飲む": {
+        teineigo: "飲みます",
+        sonkeigo: "召し上がります",
+        kenjougo: "いただきます"
+    },
+    "聞く": {
+        teineigo: "聞きます",
+        sonkeigo: "お聞きになります",
+        kenjougo: "伺います"
+    },
+    "知る": {
+        teineigo: "知ります",
+        sonkeigo: "ご存知です",
+        kenjougo: "存じます"
+    },
+    "思う": {
+        teineigo: "思います",
+        sonkeigo: "お思いになります",
+        kenjougo: "存じます"
+    },
+    "あげる": {
+        teineigo: "あげます",
+        sonkeigo: "おあげになります",
+        kenjougo: "差し上げます"
+    },
+    "もらう": {
+        teineigo: "もらいます",
+        sonkeigo: "おもらいになります",
+        kenjougo: "いただきます"
+    },
+    "くれる": {
+        teineigo: "くれます",
+        sonkeigo: "くださいます",
+        kenjougo: "いただきます"
+    },
+    "会う": {
+        teineigo: "会います",
+        sonkeigo: "お会いになります",
+        kenjougo: "お目にかかります"
+    },
+    "待つ": {
+        teineigo: "待ちます",
+        sonkeigo: "お待ちになります",
+        kenjougo: "お待ちいたします"
+    },
+    "教える": {
+        teineigo: "教えます",
+        sonkeigo: "お教えになります",
+        kenjougo: "お教えいたします"
+    },
+    "手伝う": {
+        teineigo: "手伝います",
+        sonkeigo: "お手伝いになります",
+        kenjougo: "お手伝いいたします"
+    },
+    "説明する": {
+        teineigo: "説明します",
+        sonkeigo: "ご説明になります",
+        kenjougo: "ご説明いたします"
+    },
+    "確認する": {
+        teineigo: "確認します",
+        sonkeigo: "ご確認になります",
+        kenjougo: "ご確認いたします"
+    },
+    "連絡する": {
+        teineigo: "連絡します",
+        sonkeigo: "ご連絡になります",
+        kenjougo: "ご連絡いたします"
+    },
+    "案内する": {
+        teineigo: "案内します",
+        sonkeigo: "ご案内になります",
+        kenjougo: "ご案内いたします"
+    },
+    "紹介する": {
+        teineigo: "紹介します",
+        sonkeigo: "ご紹介になります",
+        kenjougo: "ご紹介いたします"
+    },
+    "報告する": {
+        teineigo: "報告します",
+        sonkeigo: "ご報告になります",
+        kenjougo: "ご報告いたします"
+    },
+    "相談する": {
+        teineigo: "相談します",
+        sonkeigo: "ご相談になります",
+        kenjougo: "ご相談いたします"
+    },
+    "質問する": {
+        teineigo: "質問します",
+        sonkeigo: "ご質問になります",
+        kenjougo: "ご質問いたします"
+    },
+    "回答する": {
+        teineigo: "回答します",
+        sonkeigo: "ご回答になります",
+        kenjougo: "ご回答いたします"
+    },
+    "承諾する": {
+        teineigo: "承諾します",
+        sonkeigo: "ご承諾になります",
+        kenjougo: "ご承諾いたします"
+    },
+    "承認する": {
+        teineigo: "承認します",
+        sonkeigo: "ご承認になります",
+        kenjougo: "ご承認いたします"
+    },
+    "許可する": {
+        teineigo: "許可します",
+        sonkeigo: "ご許可になります",
+        kenjougo: "ご許可いたします"
+    },
+    "要求する": {
+        teineigo: "要求します",
+        sonkeigo: "ご要求になります",
+        kenjougo: "ご要求いたします"
+    },
+    "提案する": {
+        teineigo: "提案します",
+        sonkeigo: "ご提案になります",
+        kenjougo: "ご提案いたします"
+    },
+    "検討する": {
+        teineigo: "検討します",
+        sonkeigo: "ご検討になります",
+        kenjougo: "ご検討いたします"
+    },
+    "決定する": {
+        teineigo: "決定します",
+        sonkeigo: "ご決定になります",
+        kenjougo: "ご決定いたします"
+    },
+    "変更する": {
+        teineigo: "変更します",
+        sonkeigo: "ご変更になります",
+        kenjougo: "ご変更いたします"
+    },
+    "修正する": {
+        teineigo: "修正します",
+        sonkeigo: "ご修正になります",
+        kenjougo: "ご修正いたします"
+    },
+    "更新する": {
+        teineigo: "更新します",
+        sonkeigo: "ご更新になります",
+        kenjougo: "ご更新いたします"
+    },
+    "作成する": {
+        teineigo: "作成します",
+        sonkeigo: "ご作成になります",
+        kenjougo: "ご作成いたします"
+    },
+    "準備する": {
+        teineigo: "準備します",
+        sonkeigo: "ご準備になります",
+        kenjougo: "ご準備いたします"
+    },
+    "調整する": {
+        teineigo: "調整します",
+        sonkeigo: "ご調整になります",
+        kenjougo: "ご調整いたします"
+    },
+    "協力する": {
+        teineigo: "協力します",
+        sonkeigo: "ご協力になります",
+        kenjougo: "ご協力いたします"
+    },
+    "参加する": {
+        teineigo: "参加します",
+        sonkeigo: "ご参加になります",
+        kenjougo: "ご参加いたします"
+    },
+    "出席する": {
+        teineigo: "出席します",
+        sonkeigo: "ご出席になります",
+        kenjougo: "ご出席いたします"
+    },
+    "訪問する": {
+        teineigo: "訪問します",
+        sonkeigo: "ご訪問になります",
+        kenjougo: "ご訪問いたします"
+    },
+    "招待する": {
+        teineigo: "招待します",
+        sonkeigo: "ご招待になります",
+        kenjougo: "ご招待いたします"
+    },
+    "感謝する": {
+        teineigo: "感謝します",
+        sonkeigo: "ご感謝になります",
+        kenjougo: "ご感謝いたします"
+    },
+    "謝罪する": {
+        teineigo: "謝罪します",
+        sonkeigo: "ご謝罪になります",
+        kenjougo: "ご謝罪いたします"
+    },
+    "理解する": {
+        teineigo: "理解します",
+        sonkeigo: "ご理解になります",
+        kenjougo: "ご理解いたします"
+    },
+    "認識する": {
+        teineigo: "認識します",
+        sonkeigo: "ご認識になります",
+        kenjougo: "ご認識いたします"
+    },
+    "確認する": {
+        teineigo: "確認します",
+        sonkeigo: "ご確認になります",
+        kenjougo: "ご確認いたします"
+    },
+    "調査する": {
+        teineigo: "調査します",
+        sonkeigo: "ご調査になります",
+        kenjougo: "ご調査いたします"
+    },
+    "研究する": {
+        teineigo: "研究します",
+        sonkeigo: "ご研究になります",
+        kenjougo: "ご研究いたします"
+    },
+    "開発する": {
+        teineigo: "開発します",
+        sonkeigo: "ご開発になります",
+        kenjougo: "ご開発いたします"
+    },
+    "設計する": {
+        teineigo: "設計します",
+        sonkeigo: "ご設計になります",
+        kenjougo: "ご設計いたします"
+    },
+    "実装する": {
+        teineigo: "実装します",
+        sonkeigo: "ご実装になります",
+        kenjougo: "ご実装いたします"
+    },
+    "テストする": {
+        teineigo: "テストします",
+        sonkeigo: "ごテストになります",
+        kenjougo: "ごテストいたします"
+    },
+    "評価する": {
+        teineigo: "評価します",
+        sonkeigo: "ご評価になります",
+        kenjougo: "ご評価いたします"
+    },
+    "改善する": {
+        teineigo: "改善します",
+        sonkeigo: "ご改善になります",
+        kenjougo: "ご改善いたします"
+    },
+    "最適化する": {
+        teineigo: "最適化します",
+        sonkeigo: "ご最適化になります",
+        kenjougo: "ご最適化いたします"
+    }
+};
+
 let currentCategory = null;
 let currentQuestion = 0;
 let score = 0;
@@ -741,7 +1036,55 @@ function goBack() {
         currentCategory = null;
         selectedQuestions = [];
     } else {
-        // Go back to start screen
+        // Go back to start screen (from converter or other screens)
         document.getElementById('start-screen').classList.add('active');
+    }
+}
+
+// Function to show converter screen
+function showConverter() {
+    document.getElementById('start-screen').classList.remove('active');
+    document.getElementById('converter-screen').classList.add('active');
+}
+
+// Function to convert keigo
+function convertKeigo() {
+    const input = document.getElementById('input-word').value.trim();
+    const resultsDiv = document.getElementById('keigo-results');
+    const resultsContainer = document.getElementById('converter-results');
+
+    if (!input) {
+        alert('Please enter a word or phrase.');
+        return;
+    }
+
+    const keigoData = keigoConverter[input];
+
+    if (keigoData) {
+        resultsDiv.innerHTML = `
+            <div style="margin-bottom: 16px;">
+                <strong style="color: #dc2626;">Original:</strong> ${input}
+            </div>
+            <div style="margin-bottom: 12px;">
+                <strong style="color: #059669;">丁寧語 (Polite):</strong> ${keigoData.teineigo}
+            </div>
+            <div style="margin-bottom: 12px;">
+                <strong style="color: #dc2626;">敬語 (Honorific):</strong> ${keigoData.sonkeigo}
+            </div>
+            <div style="margin-bottom: 12px;">
+                <strong style="color: #7c3aed;">謙譲語 (Humble):</strong> ${keigoData.kenjougo}
+            </div>
+        `;
+        resultsContainer.style.display = 'block';
+    } else {
+        resultsDiv.innerHTML = `
+            <div style="color: #dc2626; margin-bottom: 16px;">
+                <strong>Word not found in database.</strong>
+            </div>
+            <div style="font-size: 0.9rem; color: #718096;">
+                Try common verbs like: 行く, 来る, 見る, 言う, する, 食べる, 飲む, 聞く, 知る, 思う
+            </div>
+        `;
+        resultsContainer.style.display = 'block';
     }
 }

@@ -426,6 +426,29 @@
                 Master the art of Japanese keigo (敬語) - the polite language system used in professional and formal contexts.
             </p>
             <button class="btn" onclick="startQuiz()">Enter</button>
+            <button class="btn" onclick="showConverter()" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%); margin-top: 16px;">Keigo Converter</button>
+        </div>
+
+        <div id="converter-screen" class="quiz-section">
+            <h2 class="category-title">Keigo Converter</h2>
+            <p class="intro-text">
+                Enter a Japanese word or phrase to get its formal versions in 丁寧語 (polite), 敬語 (honorific), and 謙譲語 (humble).
+            </p>
+
+            <div style="margin-bottom: 32px;">
+                <input type="text" id="input-word" placeholder="Enter Japanese word or phrase..."
+                       style="width: 100%; padding: 16px; border: 2px solid #e2e8f0; border-radius: 12px; font-size: 1.1rem; margin-bottom: 16px;">
+                <button class="btn" onclick="convertKeigo()">Convert</button>
+            </div>
+
+            <div id="converter-results" style="display: none;">
+                <div style="background: #f8fafc; border-radius: 16px; padding: 24px; margin-bottom: 24px;">
+                    <h3 style="color: #1a202c; margin-bottom: 16px; font-size: 1.3rem;">Formal Versions:</h3>
+                    <div id="keigo-results"></div>
+                </div>
+            </div>
+
+            <button class="back-btn" onclick="goBack()">← Back to Start</button>
         </div>
 
         <div id="category-screen" class="quiz-section">
